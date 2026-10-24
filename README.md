@@ -25,7 +25,7 @@ certifying the generator + parser + DP end-to-end.
 - Per tree: exact integer independence polynomial by the standard in/out subtree DP
   (`tree_unimodal.cpp`, single file, u64 coefficients), then a rise-then-fall unimodality scan.
 - Large orders split by gentreeg's res/mod (n=31 and n=32: 16 parts each).
-- Hardware: one Apple M3 Max; n=31 took ~2 days wall-clock in 16 parts; n=32 (Aug 3-4, 2026) took ~27 hours in 16 parts. Every per-order count matches OEIS A000055 exactly, including A000055(32) = 109,972,410,221.
+- Hardware: one Apple M3 Max; n=31 (Jul 29, 2026) took about 8 hours wall-clock in 16 parts; n=32 (Aug 3-4, 2026) took about 23 hours in 16 parts. Every per-order count matches OEIS A000055 exactly, including A000055(32) = 109,972,410,221.
 
 ## Reproduce
 ```
